@@ -16,67 +16,67 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'Мобильное приложение',
-    tag: 'UX/UI',
+    title: 'SaaS-платформа',
+    tag: 'React / Node.js',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/6af57610-b1e4-4a52-823e-f04d8225fe10.jpg',
-    description: 'Разработка полного пользовательского опыта для финтех-приложения. Исследование, прототипирование, дизайн системы и финальные макеты для iOS и Android.',
+    description: 'Разработка SaaS-продукта для управления командами. Аутентификация, дашборды, real-time уведомления, REST API и деплой на облачную инфраструктуру.',
     year: '2024',
-    tools: ['Figma', 'Principle', 'After Effects'],
+    tools: ['React', 'Node.js', 'PostgreSQL'],
   },
   {
     id: 2,
-    title: 'Брендинг и айдентика',
-    tag: 'Брендинг',
+    title: 'Интернет-магазин',
+    tag: 'E-commerce',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/a944d83a-3dc2-4db9-8c2f-73c8b1866bd4.jpg',
-    description: 'Создание визуальной идентичности для технологического стартапа. Логотип, палитра, типографика и brand book с полной дизайн-системой.',
+    description: 'Полный цикл разработки e-commerce площадки: каталог, корзина, оплата, личный кабинет покупателя и административная панель.',
     year: '2024',
-    tools: ['Illustrator', 'Figma', 'InDesign'],
+    tools: ['Next.js', 'Stripe', 'Prisma'],
   },
   {
     id: 3,
-    title: 'Веб-платформа',
-    tag: 'Web Design',
+    title: 'Корпоративный портал',
+    tag: 'Fullstack',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/14f41c1b-3d6f-48e0-8ef5-85751c81a1ff.jpg',
-    description: 'Редизайн корпоративной платформы с нуля. Аудит текущего продукта, UX-исследование, создание новой архитектуры и финальный дизайн.',
+    description: 'Внутренний портал компании с системой задач, документооборотом и SSO-авторизацией. Интеграция с 1С и корпоративными API.',
     year: '2023',
-    tools: ['Figma', 'Maze', 'Webflow'],
+    tools: ['React', 'Python', 'Docker'],
   },
   {
     id: 4,
-    title: 'Дизайн-система',
-    tag: 'Design Systems',
+    title: 'Мобильное приложение',
+    tag: 'React Native',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/6af57610-b1e4-4a52-823e-f04d8225fe10.jpg',
-    description: 'Построение масштабируемой дизайн-системы для команды из 30+ дизайнеров. Компоненты, токены, документация и процессы.',
+    description: 'Кроссплатформенное приложение для доставки еды. Карты, трекинг заказа, push-уведомления, онлайн-оплата.',
     year: '2023',
-    tools: ['Figma', 'Storybook', 'Zeroheight'],
+    tools: ['React Native', 'Firebase', 'Maps API'],
   },
   {
     id: 5,
-    title: 'Motion-проект',
-    tag: 'Motion',
+    title: 'Лендинг с анимациями',
+    tag: 'Frontend',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/a944d83a-3dc2-4db9-8c2f-73c8b1866bd4.jpg',
-    description: 'Анимированная презентация продукта с интерактивными прототипами. Motion-дизайн, микроанимации и пользовательские сценарии.',
+    description: 'Высококонверсионный лендинг с плавными анимациями, адаптивной вёрсткой и оптимизацией Core Web Vitals до 98 баллов.',
     year: '2023',
-    tools: ['After Effects', 'Figma', 'Lottie'],
+    tools: ['React', 'GSAP', 'Vite'],
   },
   {
     id: 6,
-    title: 'E-commerce редизайн',
-    tag: 'UX Research',
+    title: 'CRM-система',
+    tag: 'Backend',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/14f41c1b-3d6f-48e0-8ef5-85751c81a1ff.jpg',
-    description: 'Комплексный редизайн интернет-магазина на основе данных. Рост конверсии на 40% после внедрения новых решений.',
+    description: 'CRM для отдела продаж: воронка, аналитика, интеграция с телефонией и email-рассылками. Скорость загрузки снижена на 60%.',
     year: '2022',
-    tools: ['Figma', 'Hotjar', 'Google Analytics'],
+    tools: ['FastAPI', 'React', 'Redis'],
   },
 ];
 
 const SKILLS = [
-  { icon: 'Layers', label: 'UX/UI Дизайн' },
-  { icon: 'Figma', label: 'Figma / Sketch' },
-  { icon: 'Sparkles', label: 'Motion Design' },
-  { icon: 'BarChart2', label: 'UX Research' },
-  { icon: 'Palette', label: 'Брендинг' },
-  { icon: 'Code2', label: 'Прототипинг' },
+  { icon: 'Code2', label: 'React / TS' },
+  { icon: 'Server', label: 'Node / Python' },
+  { icon: 'Database', label: 'PostgreSQL' },
+  { icon: 'Smartphone', label: 'React Native' },
+  { icon: 'GitBranch', label: 'Git / CI/CD' },
+  { icon: 'Globe', label: 'REST / GraphQL' },
 ];
 
 const Index = () => {
@@ -162,7 +162,7 @@ const Index = () => {
       {screen === 'about' && (
         <div className="screen-enter min-h-screen">
           <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 border-b border-emerald-200/60 bg-[#f0f7f4]/85 backdrop-blur-sm">
-            <div className="counter-deco">ПОРТФОЛИО / 2024</div>
+            <div className="counter-deco">ПОРТФОЛИО / 2025</div>
             <div className="flex gap-6">
               <button onClick={() => navigate('projects')} className="counter-deco hover:text-emerald-600 transition-colors cursor-none" data-hover>
                 ПРОЕКТЫ
@@ -195,26 +195,26 @@ const Index = () => {
 
               <h1
                 className="font-display text-[72px] md:text-[96px] leading-none font-light mb-2 glitch-text neon-text"
-                data-text="Анна"
+                data-text="Алексей"
               >
-                Анна
+                Алексей
               </h1>
               <h2 className="font-display text-[72px] md:text-[96px] leading-none font-light mb-8 italic text-[#0f2820]/50">
-                Козлова
+                Громов
               </h2>
 
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="w-8 h-px bg-emerald-500" />
                 <span className="font-heading text-emerald-600 tracking-[0.25em] text-sm font-light">
-                  ДИЗАЙНЕР ИНТЕРФЕЙСОВ
+                  ВЕБ-РАЗРАБОТЧИК FULLSTACK
                 </span>
                 <div className="w-8 h-px bg-emerald-500" />
               </div>
 
               <p className="text-[#0f2820]/55 leading-relaxed mb-10 font-light max-w-lg font-display text-xl italic">
-                Создаю цифровые продукты, которые чувствуются правильно.
-                Моя работа — на пересечении эстетики и функциональности,
-                где каждый пиксель несёт смысл.
+                Пишу чистый код и строю продукты, которые работают.
+                От идеи до деплоя — React, Python, базы данных
+                и всё, что нужно для запуска в продакшн.
               </p>
 
               <div className="flex gap-4 flex-wrap justify-center">
@@ -344,13 +344,13 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-16">
               {/* Left */}
               <div className="stagger-children space-y-8">
-                <a href="mailto:anna@design.ru" className="flex items-center gap-4 group cursor-none" data-hover>
+                <a href="mailto:alex@gromov.dev" className="flex items-center gap-4 group cursor-none" data-hover>
                   <div className="w-12 h-12 border border-emerald-300 bg-white flex items-center justify-center group-hover:border-emerald-500 group-hover:bg-emerald-50 transition-all shadow-sm">
                     <Icon name="Mail" size={18} className="text-emerald-500" />
                   </div>
                   <div>
                     <div className="counter-deco text-[#0f2820]/30 mb-1">EMAIL</div>
-                    <div className="font-heading text-[#0f2820] group-hover:text-emerald-700 transition-colors">anna@design.ru</div>
+                    <div className="font-heading text-[#0f2820] group-hover:text-emerald-700 transition-colors">alex@gromov.dev</div>
                   </div>
                 </a>
 
@@ -365,12 +365,12 @@ const Index = () => {
                 </a>
 
                 <div>
-                  <div className="counter-deco mb-5 text-[#0f2820]/30">// СОЦИАЛЬНЫЕ СЕТИ</div>
+                  <div className="counter-deco mb-5 text-[#0f2820]/30">// СОЦСЕТИ И ПРОФИЛИ</div>
                   <div className="flex gap-3">
                     {[
                       { icon: 'MessageCircle', label: 'TG' },
+                      { icon: 'Github', label: 'GH' },
                       { icon: 'Linkedin', label: 'IN' },
-                      { icon: 'Instagram', label: 'IG' },
                       { icon: 'Globe', label: 'WEB' },
                     ].map((s) => (
                       <button
@@ -389,7 +389,7 @@ const Index = () => {
                   <div className="counter-deco text-[#0f2820]/25 mb-2">СТАТУС</div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="font-heading text-[#0f2820]/65 text-sm">Открыта к новым проектам</span>
+                    <span className="font-heading text-[#0f2820]/65 text-sm">Открыт к новым проектам</span>
                   </div>
                 </div>
               </div>
