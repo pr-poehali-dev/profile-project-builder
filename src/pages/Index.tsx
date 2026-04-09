@@ -43,12 +43,12 @@ const PROJECTS: Project[] = [
   },
   {
     id: 4,
-    title: 'Аудит безопасности ОС',
+    title: 'HTTPS/SSL на сайте',
     tag: 'Кибербезопасность',
     image: 'https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/796ce50d-6de2-4b70-8097-62be8d1a2a25.jpg',
-    description: 'Анализ уязвимостей Windows 10: настройка политик безопасности, брандмауэра, шифрования BitLocker. Отчёт по результатам пентеста.',
+    description: 'Практическая работа: подключение SSL-сертификата к учебному сайту, настройка HTTPS, редирект с HTTP, проверка цепочки сертификатов.',
     year: '2024',
-    tools: ['Windows', 'Nmap', 'Wireshark'],
+    tools: ['OpenSSL', 'Apache', 'Let\'s Encrypt'],
   },
   {
     id: 5,
