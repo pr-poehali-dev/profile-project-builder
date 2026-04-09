@@ -71,12 +71,12 @@ const PROJECTS: Project[] = [
 ];
 
 const SKILLS = [
-  { icon: 'Code2', label: 'React / TS' },
-  { icon: 'Server', label: 'Node / Python' },
-  { icon: 'Database', label: 'PostgreSQL' },
-  { icon: 'Smartphone', label: 'React Native' },
-  { icon: 'GitBranch', label: 'Git / CI/CD' },
-  { icon: 'Globe', label: 'REST / GraphQL' },
+  { icon: 'Code2', label: 'Python / C++' },
+  { icon: 'Network', label: 'Сети / TCP-IP' },
+  { icon: 'Monitor', label: 'Windows / Linux' },
+  { icon: 'Database', label: 'SQL / MySQL' },
+  { icon: 'Shield', label: 'Кибербезопасность' },
+  { icon: 'HardDrive', label: 'Железо / ПК' },
 ];
 
 const Index = () => {
