@@ -220,26 +220,33 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Right — photo */}
-              <div className="relative flex justify-center lg:justify-end">
-                <div className="relative float-anim">
-                  <div className="absolute -inset-4 border border-emerald-400/30 photo-mask" />
-                  <div className="absolute -inset-8 border border-cyan-400/20 photo-mask" />
+              {/* Right — avatar */}
+              <div className="relative flex justify-center lg:justify-center">
+                <div className="relative float-anim flex flex-col items-center">
+                  {/* Decorative rings */}
+                  <div className="absolute w-[220px] h-[220px] rounded-full border border-emerald-300/40 animate-ping" style={{ animationDuration: '3s' }} />
+                  <div className="absolute w-[260px] h-[260px] rounded-full border border-cyan-300/25" />
+                  <div className="absolute w-[300px] h-[300px] rounded-full border border-blue-300/15" />
 
-                  <img
-                    src="https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/65f966af-83bc-4a3f-bce6-6db0198eea64.jpg"
-                    alt="Портрет"
-                    className="w-72 h-96 md:w-80 md:h-[440px] object-cover photo-mask neon-glow"
-                  />
+                  {/* Avatar circle 160×160 */}
+                  <div className="relative w-40 h-40 rounded-full overflow-hidden neon-glow border-4 border-white shadow-xl shadow-emerald-200/60">
+                    <img
+                      src="https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/65f966af-83bc-4a3f-bce6-6db0198eea64.jpg"
+                      alt="Аватар"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                  <div className="absolute -bottom-6 -left-8 bg-white border border-emerald-200 px-4 py-3 shadow-lg shadow-emerald-100">
+                  {/* Badge under avatar */}
+                  <div className="mt-6 bg-white border border-emerald-200 px-5 py-3 shadow-lg shadow-emerald-100 text-center">
                     <div className="counter-deco text-emerald-600">ОПЫТ</div>
                     <div className="font-display text-3xl font-bold text-[#0f2820]">5+</div>
                     <div className="counter-deco">ЛЕТ</div>
                   </div>
 
-                  <div className="absolute -top-3 -right-3 w-6 h-6 border-t-2 border-r-2 border-cyan-500" />
-                  <div className="absolute -bottom-3 -left-3 w-6 h-6 border-b-2 border-l-2 border-emerald-500" />
+                  {/* Corner accents */}
+                  <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-cyan-500" />
+                  <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-emerald-500" />
                 </div>
               </div>
             </div>
