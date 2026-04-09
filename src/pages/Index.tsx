@@ -174,80 +174,64 @@ const Index = () => {
           </div>
 
           <div className="pt-24 pb-20 px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[85vh]">
-              {/* Left */}
-              <div className="stagger-children">
-                <div className="counter-deco mb-4">// 001 — О СЕБЕ</div>
+            <div className="flex flex-col items-center text-center min-h-[85vh] justify-center stagger-children">
 
-                <h1
-                  className="font-display text-[72px] md:text-[96px] leading-none font-light mb-2 glitch-text neon-text"
-                  data-text="Анна"
-                >
-                  Анна
-                </h1>
-                <h2 className="font-display text-[72px] md:text-[96px] leading-none font-light mb-8 italic text-[#0f2820]/50">
-                  Козлова
-                </h2>
-
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="w-8 h-px bg-emerald-500" />
-                  <span className="font-heading text-emerald-600 tracking-[0.25em] text-sm font-light">
-                    ДИЗАЙНЕР ИНТЕРФЕЙСОВ
-                  </span>
-                </div>
-
-                <p className="text-[#0f2820]/55 leading-relaxed mb-10 font-light max-w-md font-display text-xl italic">
-                  Создаю цифровые продукты, которые чувствуются правильно.
-                  Моя работа — на пересечении эстетики и функциональности,
-                  где каждый пиксель несёт смысл.
-                </p>
-
-                <div className="flex gap-4 flex-wrap">
-                  <button
-                    onClick={() => navigate('projects')}
-                    className="btn-primary px-8 py-3 font-heading text-sm tracking-[0.2em] cursor-none"
-                    data-hover
-                  >
-                    ПРОЕКТЫ
-                  </button>
-                  <button
-                    onClick={() => navigate('contacts')}
-                    className="btn-secondary px-8 py-3 font-heading text-sm tracking-[0.2em] cursor-none"
-                    data-hover
-                  >
-                    КОНТАКТЫ
-                  </button>
+              {/* Avatar — центр страницы */}
+              <div className="relative float-anim flex items-center justify-center mb-10">
+                <div className="absolute w-[220px] h-[220px] rounded-full border border-emerald-300/40 animate-ping" style={{ animationDuration: '3s' }} />
+                <div className="absolute w-[260px] h-[260px] rounded-full border border-cyan-300/25" />
+                <div className="absolute w-[300px] h-[300px] rounded-full border border-blue-300/15" />
+                <div className="w-40 h-40 rounded-full overflow-hidden neon-glow border-4 border-white shadow-xl shadow-emerald-200/60">
+                  <img
+                    src="https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/65f966af-83bc-4a3f-bce6-6db0198eea64.jpg"
+                    alt="Аватар"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
-              {/* Right — avatar */}
-              <div className="relative flex justify-center lg:justify-center">
-                <div className="relative float-anim flex flex-col items-center">
-                  {/* Decorative rings */}
-                  <div className="absolute w-[220px] h-[220px] rounded-full border border-emerald-300/40 animate-ping" style={{ animationDuration: '3s' }} />
-                  <div className="absolute w-[260px] h-[260px] rounded-full border border-cyan-300/25" />
-                  <div className="absolute w-[300px] h-[300px] rounded-full border border-blue-300/15" />
+              {/* Text */}
+              <div className="counter-deco mb-4">// 001 — О СЕБЕ</div>
 
-                  {/* Avatar circle 160×160 */}
-                  <div className="relative w-40 h-40 rounded-full overflow-hidden neon-glow border-4 border-white shadow-xl shadow-emerald-200/60">
-                    <img
-                      src="https://cdn.poehali.dev/projects/7d17a91e-d483-43f0-9128-592c03e0bf21/files/65f966af-83bc-4a3f-bce6-6db0198eea64.jpg"
-                      alt="Аватар"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+              <h1
+                className="font-display text-[72px] md:text-[96px] leading-none font-light mb-2 glitch-text neon-text"
+                data-text="Анна"
+              >
+                Анна
+              </h1>
+              <h2 className="font-display text-[72px] md:text-[96px] leading-none font-light mb-8 italic text-[#0f2820]/50">
+                Козлова
+              </h2>
 
-                  {/* Badge under avatar */}
-                  <div className="mt-6 bg-white border border-emerald-200 px-5 py-3 shadow-lg shadow-emerald-100 text-center">
-                    <div className="counter-deco text-emerald-600">ОПЫТ</div>
-                    <div className="font-display text-3xl font-bold text-[#0f2820]">5+</div>
-                    <div className="counter-deco">ЛЕТ</div>
-                  </div>
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="w-8 h-px bg-emerald-500" />
+                <span className="font-heading text-emerald-600 tracking-[0.25em] text-sm font-light">
+                  ДИЗАЙНЕР ИНТЕРФЕЙСОВ
+                </span>
+                <div className="w-8 h-px bg-emerald-500" />
+              </div>
 
-                  {/* Corner accents */}
-                  <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-cyan-500" />
-                  <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-emerald-500" />
-                </div>
+              <p className="text-[#0f2820]/55 leading-relaxed mb-10 font-light max-w-lg font-display text-xl italic">
+                Создаю цифровые продукты, которые чувствуются правильно.
+                Моя работа — на пересечении эстетики и функциональности,
+                где каждый пиксель несёт смысл.
+              </p>
+
+              <div className="flex gap-4 flex-wrap justify-center">
+                <button
+                  onClick={() => navigate('projects')}
+                  className="btn-primary px-8 py-3 font-heading text-sm tracking-[0.2em] cursor-none"
+                  data-hover
+                >
+                  ПРОЕКТЫ
+                </button>
+                <button
+                  onClick={() => navigate('contacts')}
+                  className="btn-secondary px-8 py-3 font-heading text-sm tracking-[0.2em] cursor-none"
+                  data-hover
+                >
+                  КОНТАКТЫ
+                </button>
               </div>
             </div>
 
